@@ -100,6 +100,7 @@ input {
 	margin-bottom: 20px;
 	border: none;
 }
+
 .btn {
 	width: 147px;
 	height: 50px;
@@ -111,14 +112,15 @@ input {
 	font-weight: 700;
 	border: none;
 	&:hover {
-		background-color: var(--Strong-cyan);
+		background-color: var(--Light-grayish-cyan);
 		color: var(--Very-dark-cyan);
 		cursor: pointer;
 	}
-	&:focus {
-		background-color: var(--Strong-cyan);
+	
+}
+.activo {
+	background-color: var(--Strong-cyan);
 		color: var(--Very-dark-cyan);
-	}
 }
 .input__custom {
 	width: 147px;
@@ -148,13 +150,13 @@ input {
 		font-size: 0.7rem;
 	}
 }
-.cant__resultado {
+.cant__resultado, .total__resultado {
 	font-size: 1.5rem;
 	color: var(--Strong-cyan);
 	font-family: var(--font);
 	font-weight: bold;
 }
-.btn__resultado {
+.btn__reset {
 	background-color: var(--Strong-cyan);
 	color: var(--Very-dark-cyan);
 	border: none;
@@ -162,6 +164,10 @@ input {
 	padding: 5px;
 	font-weight: 700;
 	font-size: 1rem;
+	cursor: pointer;
+	&:hover {
+		background-color: var(--Light-grayish-cyan);
+	}
 }
 @media (width > 926px) {
 	.contenedor-cal {
@@ -187,10 +193,10 @@ input {
 			font-size: 0.7rem;
 		}
 	}
-	.cant__resultado {
+	.cant__resultado, .total__resultado {
 		font-size: 2.5rem;
 	}
-	.btn__resultado {
+	.btn__reset {
 		padding: 15px;
 	}
 }

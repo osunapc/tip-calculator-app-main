@@ -11,10 +11,9 @@
 			sizes="32x32"
 			href="./images/favicon-32x32.png"
 		/>
-    <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css" />
 
 		<title>Frontend Mentor | Tip calculator app</title>
-
 	</head>
 	<body>
 		<header class="header">
@@ -26,45 +25,44 @@
 		<main class="contenedor-cal">
 			<section class="cal">
 				<label class="label_imput" for="bill">Bill</label>
-				<input class="input_cal" type="number" id="bill" value="0" />
+				<input class="input_cal" type="number" id="bill" value="100" />
 				<fieldset class="btns__cal">
-          <legend class="btns__legend">	Select Tip %</legend>
+					<legend class="btns__legend">Select Tip %</legend>
 					<button class="btn activo">5%</button>
-          <button class="btn">10%</button>
-          <button class="btn">15%</button>
-          <button class="btn">25%</button>
-          <button class="btn">50%</button>
-          <input class="input__custom" type="number" placeholder="Custom">
+					<button class="btn">10%</button>
+					<button class="btn">15%</button>
+					<button class="btn">25%</button>
+					<button class="btn">50%</button>
+					<input class="input__custom" type="number" placeholder="Custom" />
 				</fieldset>
-        <label class="label_input-personas" for="personas">Number of People <span class="err">Can't be zero</span></label>
+				<label class="label_input-personas" for="personas"
+					>Number of People <span class="err">Can't be zero</span></label
+				>
 				<input class="input__personas" type="number" id="personas" value="5" />
 			</section>
+			
 			<section class="resultado">
-       <header class="header__resultado">
-         <article class="art__resultado">
-          <p>Tip Amount <br><span>/ person</span></p>
-          <p class="cant__resultado">$4.27</p>
-        </article>
-        <article class="art__resultado">
-          <p>Total <br><span>/ person</span></p>
-          <p class="cant__resultado">$10.69</p>
-        </article>
-       </header>
-        
-          <button class="btn__resultado">RESET</button>
-        
-      </section>
+				<header class="header__resultado">
+					<article class="art__resultado">
+						<p>Tip Amount <br /><span>/ person</span></p>
+						<p class="cant__resultado">$0</p>
+					</article>
+					<article class="art__resultado">
+						<p>Total <br /><span>/ person</span></p>
+						<p class="total__resultado">$0</p>
+					</article>
+				</header>
+
+				<button class="btn__reset">RESET</button>
+			</section>
 		</main>
-
-	  
-
 
 		<footer class="attribution">
 			Challenge by
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 				>Frontend Mentor</a
 			>. Coded by <a href="https://osunadigital.netlify.app/">Gabriel osuna</a>.
-    </footer>
-    <script src="/main.js"></script>
+		</footer>
+		<script src="/main.js"></script>
 	</body>
 </html>
